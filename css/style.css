@@ -126,7 +126,7 @@ main {
     float: left;
 }
 
-#jumbotron span {
+#jumbotron .badge {
     background-color: #155BBA;
     font-size: 12pt;
     font-weight: lighter;
@@ -162,6 +162,18 @@ main {
 
 .menu-ham {
     margin-top: 0;
+}
+
+.offcanvas {
+    color: #000;
+}
+
+#offcanvasRight {
+    width: 100vw;
+}
+
+.email-form {
+    padding-top: 6px;
 }
 
 #main {
@@ -206,6 +218,10 @@ h5 {
 
     #classi-desktop {
         display: block;
+    }
+
+    #offcanvasRight {
+        width: 50vw;
     }
 }
 
