@@ -18,7 +18,7 @@ nav {
     right: 0;
     left: 0;
     background-color: #fff;
-    margin: 0
+    margin: 0;
 }
 
 .nav-ico {
@@ -39,7 +39,7 @@ img[alt="logo-mobile"] {
 }
 
 img[alt="logo"] {
-    height: 40px;
+    height: 30px;
     display: none;
 }
 
@@ -72,17 +72,22 @@ aside {
     color: #fff;
     height: 100vh;
     width: 15%;
-    padding: 20px 10px 50px 10px;
+    padding: 80px 10px 50px 10px;
     display: flex;
     flex-direction: column;
     font-size: 17pt;
     float: left;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
 }
 
 .aside-voices {
     list-style-type: none;
     line-height: 40px;
     margin-left: -30px;
+    display: flex;
 }
 
 .aside-voices a {
@@ -102,13 +107,16 @@ aside {
 /*MAIN*/
 
 main {
-    width: 100%; 
+    height: auto;
+    padding-left: 15%;
+    background-color: #F8F9FA;
+    font-size: 11pt;
 }
 
 #jumbotron {
     background-color: #1A72E8;
     color: #fff;
-    padding: 30px 10px;
+    padding: 80px 10px 30px 10px;
     width: 100%;
 }
 
@@ -122,11 +130,10 @@ main {
     background-color: #155BBA;
     font-size: 12pt;
     font-weight: lighter;
-    margin: 0 3px;
 }
 
 .app-top span {
-    margin-top: 5px;
+    margin-top: 15px;
 }
 
 .app-desktop {
@@ -139,6 +146,89 @@ main {
 }
 
 #jumbotron button {
-    border: 1px solid #fff;
-    background-color: transparent;
+    margin-left: 10px;
+    margin-top: -15px;
+}
+
+#jumbotron button:hover {
+    color: #155BBA;
+
+}
+
+.new-student {
+    display: flex;
+    align-items: center;
+}
+
+.menu-ham {
+    margin-top: 0;
+}
+
+#main {
+    padding: 20px;
+}
+
+#main h3 {
+    font-weight: lighter;
+    margin-bottom: -2px;
+}
+
+img[alt="class-avatar"] {
+    border-radius: 100%;
+    height: 35px;
+    margin-right: 10px;
+}
+
+.list-group-flush li:hover {
+    background-color: #EDECEE;
+}
+
+.list-group-flush li:first-child:hover {
+    background-color: #fff;
+}
+
+h5 {
+    font-weight: lighter;
+}
+
+@media screen and (min-width: 768px) {
+
+}
+
+@media screen and (min-width: 992px) {
+    img[alt="logo-mobile"] {
+        display: none;
+    }
+    
+    img[alt="logo"] {
+        display: block;
+    }
+
+    .nav-ico {
+        display: block;
+    }
+
+    .aside-text {
+        display: block;
+        font-size: 12pt;
+    }
+
+    .aside-voices a, .settings a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aside-voices i, .settings i {
+        margin-right: 20px;
+    }
+
+    .app-desktop {
+        display: inline;
+    }
+    
+    .app-mobile {
+        display: none;
+    }
+    
 }
